@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --primarycolor:#fff;
+    --maintext : #FD1AFD;
+    --secondarytext : #000;
+    --btnhover : #f008e0;
+}
+.oscuro{
+    --primarycolor:#000000;
+    --maintext : #FD1AFD;
+    --secondarytext : #fff;
+    --btnhover : #f008e0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'poppins';
+    background-color: var(--primarycolor);
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 140px;
+}
+
+/* header section  */
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    color: var(--maintext);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--secondarytext);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav li a:hover{
+    color: var(--maintext);
+}
+.header-nav .nav  li a.active{
+    color: var(--maintext);
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--secondarytext);
+    background-color: var(--maintext);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: var(--btnhover);
+}
+.header-nav {
+    width: 45%;
+}
+.header-btn{
+    display: inline-flex;
+}
+.header-btn .mode-change{
+    margin-left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--secondarytext);
+}
+/* hero section  */
+
+.social-icon-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icon-list li{
+    margin: 15px 0;
+}
+.social-icon-list li a{
+    font-size: 2rem;
+    color: var(--maintext);
+
+}
+.hero-section{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .hero-content{
+    width: 40%;
+
+}
+
+.hero-section .hero-content .content-text{
+    font-size: 2rem;
+    color: var(--secondarytext);
+
+}
+.hero-section .hero-content .content-text span{
+    color: var(--maintext);
+}
+.hero-section .hero-content .hero-btn button{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.hero-section .hero-image{
+    width: 40%;
+}
+
+
+.hero-image img{
+    height: 70vh;
+}
